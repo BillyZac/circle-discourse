@@ -9,6 +9,7 @@
   "author": "Zachary Smith",
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^4.0.0"
+    "dotenv": "^4.0.0",
+    "lowdb": "^0.14.0"
   }
 }
