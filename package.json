@@ -10,7 +10,9 @@
   "license": "MIT",
   "dependencies": {
     "dotenv": "^4.0.0",
+    "express": "^4.14.1",
     "lowdb": "^0.14.0",
+    "nforce": "^1.7.0",
     "superagent": "^3.4.1"
   }
 }
