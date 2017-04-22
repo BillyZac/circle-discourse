@@ -15,6 +15,11 @@ const getUsersAndTheirGroups = () => {
       return users
     })
     .then(users => Promise.all(users.map(getGroups)))
+    .catch(error => {
+      console.log('There was an error in getUsersAndTheirGroups');
+      console.log(error);
+      return 'There was an error in getUsersAndTheirGroups'
+    })
 }
 
 module.exports = getUsersAndTheirGroups

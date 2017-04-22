@@ -17,7 +17,11 @@ const getGroups = user => {
       username: user.username,
       groups
     }))
-    .catch(err => console.log(err))
+    .catch(error => {
+      console.log('There was an error in getGroups');
+      console.log(error);
+      return 'There was an error in getGroups'
+    })
 }
 
 module.exports = getGroups
