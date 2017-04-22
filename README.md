@@ -16,4 +16,4 @@ Port 3000 is the default, but if you set PORT in a `.env` the server will use th
 # TODO
 - Cache: Use an in memory cache, or low DB, or similar. REST calls should hit the cache instead of Discourse directly.
 - Make an ETL for this cache. (I wrote one then deleted it. Oops.)
-- Make an update script for SalesForce. See `updateSalesForce` for a sketch of the idea. This is meant to be run on a cronjob, or in response to a webhook, or something like that.
+- Elaborate on the queue idea. See `addUserToQueue` for an initial sketch. This is meant to be run on a cronjob, or in response to a webhook, or something like that, and to send an "Action" to a service that is responsible to syncing data across the system.

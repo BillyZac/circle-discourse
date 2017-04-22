@@ -2,19 +2,18 @@
   "name": "discourse-api-demo",
   "version": "1.0.0",
   "description": "Exploring the Discourse API",
-  "main": "index.js",
+  "main": "rest.js",
   "scripts": {
     "test": "echo \"Write some tests, fool!\" && exit 0",
-    "start": "node rest.js",
-    "prod:start": "heroku local"
+    "start": "node rest.js"
   },
-  "main": "rest.js",
   "engines": {
     "node": "7.x"
   },
   "author": "Zachary Smith",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "dotenv": "^4.0.0",
     "express": "^4.14.1",
     "lowdb": "^0.14.0",
