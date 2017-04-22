@@ -4,6 +4,8 @@ const express = require('express')
 const app = express()
 const getUsersAndTheirGroups = require('./getUsersAndTheirGroups')
 
+app.set('port', (process.env.PORT || 3000));
+
 app.get('/', (req, res) => {
   console.log('Request received')
   getUsersAndTheirGroups()
@@ -12,5 +14,6 @@ app.get('/', (req, res) => {
     })
 })
 
-app.listen(3000)
-console.log('listening on 3000');
+app.listen(app.get('port'), () => {
+  console.log('Listening on', app.get('port'));
+})

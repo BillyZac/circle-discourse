@@ -8,6 +8,7 @@
     "start": "node rest.js",
     "prod:start": "heroku local"
   },
+  "main": "rest.js",
   "engines": {
     "node": "7.x"
   },
