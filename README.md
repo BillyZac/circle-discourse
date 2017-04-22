@@ -9,10 +9,9 @@ DISCOURSE_USER_NAME=your-stuff!
 DISCOURSE_BASE_URI=your-stuff!
 
 ## Usage
-`node rest` runs a web server on port 3000. Hit `/` to get a list of Discourse users and their groups.
+`node rest` runs a web server. Hit `/` to get a list of Discourse users and their groups.
 
-## query.js
-Demonstrates a basic query of the LowDB database.
+Port 3000 is the default, but if you set PORT in a `.env` the server will use that instead.
 
 # TODO
 - Cache: Use an in memory cache, or low DB, or similar. REST calls should hit the cache instead of Discourse directly.
