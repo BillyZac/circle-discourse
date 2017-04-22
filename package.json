@@ -4,7 +4,7 @@
   "description": "Exploring the Discourse API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Write some tests, fool!\" && exit 0",
     "start": "node rest.js",
     "prod:start": "heroku local"
   },
