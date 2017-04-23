@@ -1,9 +1,2 @@
 language: node_js
 node_js: node
-deploy:
-  provider: heroku
-  api_key:
-    secure: txQNL9SlEyY8YI9Jfm474m+daP8OhOUiR5VjkUrN7kqQR1Q67DE0NGDyiiPTOXYU1bnzq8IkcZYxabqjufp1d+Ue16QXpcEkXV3jhxBWaJLPlvybbxJz/JjgrqXY71IP7n+esT1W76uj4ZeQHmde1bn20OkPZUBJeAN8oxrxfoYotYLJyXXwSENlY52A637y29lxC718C7nNibqDC/9tPyklVgZcnYS09JipuyUwNxo7ZCvQSsl571J/h46dzImugldJ1cKnFJw68NpIiuquan3IG7YU2QgwkfvjxZkJE2tnpumEA2EE5AwNXFCnWeocGurFmW0RGqxKawAGScPztJ+mQAZOe8w93p5aWZngA0iwQnAJAZki1j5VNn4BZcqNyKpV+v8Vu0EZu2onwqraKAG65hjOH1Q3Yc1zbdrwIguetfPJr8CQu49AXJh/eoHbAepwywaBCiOfa/Q6qSkBGuRASyq0IKeCMtVmI5JWiFfiQARX2sa5+ZRGsVnAqj/P2i+MlnudmE/DfIAdhOGFylidTfvCyngWloygAdfZClFENOedOY73Yb84c+Dft+HY5sHtG7NmWAaJW0wt7kEfeEL/MPCvfd0gK3Gjgk+c5U4NdCrKN4bES+Ehenp4F6F00894/49Qv+yDx8KkPhggTatEHT2d388JV+BefX5iwsY=
-  app: circle-discourse
-  on:
-    repo: BillyZac/circle-discourse
