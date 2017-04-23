@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
     })
 })
 
-// A stub for testing the queue script
+// Pretend like this is a job queue out in cyberspace
 app.post('/queue', (req, res) => {
   console.log('Received an action', req.body)
   res.end()
@@ -25,10 +25,9 @@ app.post('/queue', (req, res) => {
 
 // An endpoint for Discourse webhooks
 app.post('/discourse', (req, res) => {
-  // Looking for these headers:
-  // X-Discourse-Event-Id and X-Discourse-Event-Type to see whether you are interested. X-Discourse-Event
-  console.log('Received an update from Discourse')
-  console.log(req.headers)
+  // Look for these headers:
+  // X-Discourse-Event-Id and X-Discourse-Event-Type X-Discourse-Event
+  console.log('Received an update from Discourse. HTTP request headers: ', req.headers)
   res.end()
 })
 
