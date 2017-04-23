@@ -19,7 +19,16 @@ app.get('/', (req, res) => {
 
 // A stub for testing the queue script
 app.post('/queue', (req, res) => {
-  console.log('Received an action', req.body);
+  console.log('Received an action', req.body)
+  res.end()
+})
+
+// An endpoint for Discourse webhooks
+app.post('/discourse', (req, res) => {
+  // Looking for these headers:
+  // X-Discourse-Event-Id and X-Discourse-Event-Type to see whether you are interested. X-Discourse-Event
+  console.log('Received an update from Discourse')
+  console.log(req.headers)
   res.end()
 })
 
